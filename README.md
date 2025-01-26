@@ -2,6 +2,9 @@
 
 A modern desktop application for generating secure and customizable passwords with a user-friendly interface.
 
+![image](https://github.com/user-attachments/assets/791c0222-b35f-484b-a943-16e6c00fcce1)
+
+
 ## Features
 
 ### Password Generation
