@@ -29,63 +29,122 @@ A modern desktop application for generating secure and customizable passwords wi
 - View complete history in a dedicated tab
 - Organized table view with password and generation date
 
-## Installation
+## Getting Started
 
-1. Download the latest release from the releases section
-2. Run the Password_Generator.exe file
-3. No installation required - the application runs as a standalone executable
+### Prerequisites
+- Python 3.12 or later
+- Windows 10/11
 
-## Usage
+### Installation Methods
 
-1. **Generate a Password**:
-   - Set desired password length using slider or text input
-   - Select character types to include
-   - Set minimum requirements if needed
-   - Click "Generate Password"
+#### Method 1: Run Python Script
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/password-generator.git
+   cd password-generator
+   ```
 
-2. **Copy Password**:
-   - Click "Copy to Clipboard" to copy the generated password
-   - Paste anywhere you need the password
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. **Save Password**:
-   - Click "Save Password" to store it in history
-   - View saved passwords in the History tab
+3. Run the application
+   ```bash
+   python password_generator.py
+   ```
 
-## Security Features
+#### Method 2: Build Executable
+1. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- Cryptographically secure random number generation
-- Option to enforce minimum complexity requirements
-- Configurable character set exclusions
-- No password storage in plain text
+2. Optional: Create application icon
+   ```bash
+   python create_icon.py
+   ```
+
+3. Build executable
+   ```bash
+   python build.py
+   ```
+
+4. Find the executable in `dist/Password_Generator.exe`
+
+## Usage Guide
+
+### Generating Passwords
+1. Set password length using slider or input box
+2. Select desired character types
+3. Configure minimum requirements (optional)
+4. Click "Generate Password"
+
+### Managing Passwords
+- Click "Copy to Clipboard" to copy password
+- Click "Save Password" to add to history
+- View saved passwords in History tab
+
+## Project Structure
 
 ## Technical Details
 
-Built with:
+### Built With
 - Python 3.12
 - tkinter for GUI
 - JSON for data persistence
 - PyInstaller for executable creation
 
-## Requirements
+### Security Features
+- Cryptographically secure random generation
+- Configurable complexity requirements
+- Local-only storage
+- No plain text password storage
 
-- Windows 10/11
-- No additional software required
-- Approximately 15MB disk space
-
-## Privacy
-
-- All data is stored locally
+## Privacy & Security
+- All data stored locally
 - No internet connection required
 - No data collection or transmission
+- No external dependencies for core functionality
+
+## Development
+
+### Setting Up Development Environment
+1. Fork the repository
+2. Create feature branch
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make changes
+4. Submit pull request
+
+### File Guidelines
+Files to include in repository:
+- ✅ password_generator.py
+- ✅ build.py
+- ✅ create_icon.py
+- ✅ requirements.txt
+- ✅ README.md
+- ✅ LICENSE
+- ✅ .gitignore
+
+Do not commit:
+- ❌ dist/ directory
+- ❌ build/ directory
+- ❌ __pycache__/
+- ❌ .spec files
+- ❌ password_history.json
 
 ## Support
-
-For issues, questions, or suggestions, please create an issue in the repository or contact the developer.
+For issues, questions, or suggestions:
+1. Check existing GitHub issues
+2. Create new issue if needed
+3. Include detailed description and steps to reproduce
 
 ## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-MIT License - Feel free to use, modify, and distribute as needed.
-
-## Developer Notes
-
-This application was designed with both security and usability in mind, providing a balance between generating secure passwords and maintaining a user-friendly interface. 
+## Acknowledgments
+- Built with security and usability in mind
+- Designed for both novice and advanced users
+- Community contributions welcome 
